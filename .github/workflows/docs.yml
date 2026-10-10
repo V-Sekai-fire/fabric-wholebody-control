@@ -16,6 +16,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
 jobs:
   build:
     name: Build Sphinx Docs
